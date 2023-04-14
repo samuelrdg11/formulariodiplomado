@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h3>
+        Taller 2 - Samuel Rodriguez
+    </h3>
+    <div class="container">        
+        <form name="form" method="post">
+            <table class="main">
+                    <th><input id="id" type="Text" placeholder="Ingrese su cédula" required></th>
+                    <th><input id="nombre" type="Text" placeholder="Ingrese su nombre" required></th>
+                    <th><input id="apellido" type="Text" placeholder="Ingrese su apellido" required></th>
+                    <th><input id="ciudad" type="Text" placeholder="Ingrese su ciudad de nacimiento" required></th>
+                    <th><input id="edad" type="Text" placeholder="Ingrese su edad" required></th>
+            </table>
+            <div class="botones">    
+                <button class="botonListar" onclick="cargar()">Listados</button>
+                <button class="botonEnviar" type="reset" onclick="usuarionuevo()">Enviar</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cédula</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Ciudad</th>
+                        <th>Edad</th>
+                    </tr>
+                </thead>
+                <tbody id="usuarios" class="usuarios">
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
